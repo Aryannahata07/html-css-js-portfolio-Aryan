@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">ARYAN NAHATA</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="certificates">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">ARYAN NAHATA</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+                <li><a href="certificates" onclick="toggleMenu()">Certificates</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+<section id="profile">
+    <div class="section_pic-container">
+        <img src="./assests/profile.jpg" alt="aryan profile pic">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">ARYAN NAHATA</h1>
+        <p class="section__text__p2">Front-end Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assests/ARYAN NAHATA Resume.pdf')">Download CV</button>
+        </div>
+        <div id="socials-container">
+            <img src="assests/linkedin.png" alt="my linkedln profile"
+            class="icon" onclick="location.href='https://www.linkedin.com/in/aryan-nahata-12b921282/'">
+            <img src="assests/github.png" alt="my github profile"
+            class="icon" onclick="location.href='https://github.com/Aryannahata07'">
+            
+        </div>
+    </div>
+</section>
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-conatiner">
+            <img src="./assests/profile-2.jpg" alt="Profile pic" class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assests/experience.png" alt="exp icon" class="icon">
+                    <h3>SKILLS</h3>
+                    <p>Programming Languages: Python , C++ and C.<br /> Front-end Development using HTML and
+                        CSS.</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assests/education.png" alt="education icon" class="icon">
+                    <h3>EDUCATION</h3>
+                    <p>B.TECH IN ARTIFICIAL INTELLIGENCE AND MACHINE LERARNING <br />(BATCH '27) <br />BIT MESRA. </p>
+                </div>
+            </div>
+                <p class="about_me">I am a second-year college student driven by a passion for learning new things. My positive attitude,
+                    adaptability, and a commitment to excellence have helped me excel in both academics and extra-curricular
+                    activities. I thrive in dynamic environments where creativity and critical thinking are paramount. Outside
+                    the classroom, I actively participate in Clubs, Activities, or Extracurriculars to broaden my horizons and
+                    develop a well-rounded skill set. Through these experiences, I have cultivated strong communication,
+                    teamwork, and time-management skills</p>
+            
+        </div>
+    </div>
+</section>
+<section id="certi">
+    <p class="section__text__p1"></p>
+    <h1 class="title">Certificates</h1>
+    <div class="about-containers">
+        <div class="details-container">
+            <img src="./assests/social.png" alt="google icon" class="icon">
+            <h3>Crash course on Python</h3>
+            <p>By GOOGLE<br/>Coursera Credential ID:FSXNB62T2LZR</p>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/FSXNB62T2LZR">Show Credentials</a>
+        </div>
+        <div class="details-container">
+            <img src="./assests/meta.png" alt="meta icon" class="icon">
+            <h3>Front-end Development</h3>
+            <p>By META<br />Coursera Credential ID:9AQAGBSBZQK4</p>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/9AQAGBSBZQK4">Show Credentials</a>
+        </div>
+    </div>
+    
+</section>
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assests/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:aryan.nahata4@gmail.com">aryan.nahata4@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assests/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/aryan-nahata-12b921282">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Aryan Nahata. All Rights Reserved.</p>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
